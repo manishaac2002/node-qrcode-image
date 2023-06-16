@@ -22,3 +22,6 @@ qr.toDataURL(strData, (err, code) => {
 
 //   console.log(code);
 });
+
+
+// generate qr code without image a image
