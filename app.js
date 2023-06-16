@@ -23,9 +23,3 @@ qr.toDataURL(qrData, { errorCorrectionLevel: 'H' }, (err, qrDataURL) => {
   });
 });
 
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/manishaac2002/node-qrcode-image.git
-// git push -u origin main
