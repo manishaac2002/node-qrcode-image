@@ -1,9 +1,9 @@
 import QRCode from 'qrcode'
 
-// const data ={
-//     name : "nisha",
-//     id: "0201303793"
-// }
+const data ={
+    name : "nisha",
+    id: "0201303793"
+}
 
 // const qrCode = QRCode.toDataURL(data)
 // .then(url=>{
@@ -26,16 +26,18 @@ import QRCode from 'qrcode'
 // With promises
 try {
     
-    QRCode.toDataURL('I am a pony!')
-    console.log(url)
+   const qrCode = QRCode.toDataURL(data)
+    console.log(data)
 } catch (error) {
     console.error(error)
 }
-  
-const generateQR = async text => {
+const generateQR = async data=> {
   try {
-    console.log(await QRCode.toDataURL(text))
-  } catch (err) {
-    console.error(err)
+    console.log(await QRCode.toDataURL(data))
+  } catch (error) {
+    console.error(error)
   }
 }
+
+
+
