@@ -1,3 +1,4 @@
+// old version of code
 import qr from 'qrcode';//to generate qr code 
 import fs from 'fs'; //to covet the image file
 
