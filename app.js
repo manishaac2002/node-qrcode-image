@@ -1,7 +1,13 @@
 import qr from 'qrcode';
 import fs from 'fs';
 
-const qrData = 'http://example.com'; // QR code data or URL
+const qrData={
+  id: 1,
+  name: "Sanjay",
+  email: "testuser@gmail.com"
+}
+
+// const qrData = 'http://example.com'; // QR code data or URL
 
 // Generate the QR code as a data URL
 qr.toDataURL(qrData, { errorCorrectionLevel: 'H' }, (err, qrDataURL) => {
