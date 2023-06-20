@@ -29,3 +29,11 @@ qr.toDataURL(JSON.stringify(qrData), { errorCorrectionLevel: 'H' }, (err, qrData
   });
 });
 
+// fs.unlink()
+
+// import { unlink } from 'node:fs';
+// // Assuming that 'path/file.txt' is a regular file.
+// unlink('path/file.txt', (err) => {
+//   if (err) throw err;
+//   console.log('path/file.txt was deleted');
+// });
