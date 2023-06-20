@@ -10,7 +10,7 @@ const qrData={
 // const qrData = 'http://example.com'; // QR code data or URL
 
 // Generate the QR code as a data URL
-qr.toDataURL(qrData, { errorCorrectionLevel: 'H' }, (err, qrDataURL) => {
+qr.toDataURL(JSON.stringify(qrData), { errorCorrectionLevel: 'H' }, (err, qrDataURL) => {
   if (err) {
     console.error('Error occurred while generating QR code:', err);
     return;
